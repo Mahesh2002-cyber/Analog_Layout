@@ -7,3 +7,7 @@ To provide comprehensive documentation, best practices, and workflow guidelines 
 - Analog layout typically involves manual placement and routing using computer-aided design tools, with extensive verification steps such as Design Rule Checking (DRC) and Layout Versus Schematic (LVS) to ensure the final layout matches the intended electronic behavior.
 
 # Content
+- [1. Tool and PDK Setup](#1-tools-and-pdk-setup)
+  - [1.1 Tools Required](#11-tools-required)
+  - [1.2 PDK Required](#12-pdk-required)
+  - [1.3 Install and Setup EDA Tools](#13-install-and-setup-eda-tools)
