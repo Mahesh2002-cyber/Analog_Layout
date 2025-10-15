@@ -12,7 +12,7 @@ To provide comprehensive documentation, best practices, and workflow guidelines 
   - [1.2 PDK Required](#12-pdk-required)
   - [1.3 Install and Setup EDA Tools](#13-install-and-setup-eda-tools)
 - [2. Brief about complimentary CMOS Transistors](#2-Brief-about-complimentary-CMOS-Transistors)
-  - [1.1 Schematic of CMOS Inverter]
+  - [1.1 Schematic of CMOS Inverter](#1.1-Schematic-of-CMOS-Inverter)
 
 
 
@@ -131,4 +131,16 @@ tech load $HOME/share/pdk/sky130A/libs.tech/magic/sky130A.tech
 addpath $HOME/share/pdk/sky130A/libs.ref/sky130_fd_pr/mag
 ```
 
+# 2. Brief about complimentary CMOS Transistors
+- Pull-up network consists of P-type device.
+- PMOS device should connect to vdd always.
+- Pull-down network consists of n-type devices.
+- NMOS device should connect to gnd always.
+<img width="1509" height="1071" alt="image" src="https://github.com/user-attachments/assets/ed8e2426-3526-447e-b57d-b2545bed5b80" />
+
+- CMOS Inverter Consists of a PMOS and a NMOS connected in following fashion.
+- Stick diagram explains the positioning of P-diffusion, N-diffusion and
+  polysilicon positioning.
+
+<img width="1146" height="511" alt="image" src="https://github.com/user-attachments/assets/c2df450b-3639-4e3f-ac54-5587ef346952" />
 
