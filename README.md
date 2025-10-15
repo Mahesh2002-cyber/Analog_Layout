@@ -165,12 +165,13 @@ addpath $HOME/share/pdk/sky130A/libs.ref/sky130_fd_pr/mag
   <img width="719" height="355" alt="image" src="https://github.com/user-attachments/assets/7e28a9bd-e7f2-4bcc-bdb5-c1bf51566d07" />
 
 - Then select “pfet3_01v8.sym”, for PMOS device
-- Select the devicce
 
   <img width="719" height="353" alt="image" src="https://github.com/user-attachments/assets/6eb26a7a-eb57-4aac-9450-cc2b8b2c910c" />
 
 - Click on schematic editor window.
 - Again press “shit+i” select “nfet3_01v8.sym” for NMOS.
+- Select the device and press "Q" it will show the properties of a device, then change the device length and widths as per requirement.
+- Repeate the above step for all devices.
 
   <img width="725" height="354" alt="image" src="https://github.com/user-attachments/assets/4fdeca55-9551-4b3b-81e8-c143b6a8a627" />
 
@@ -195,8 +196,26 @@ addpath $HOME/share/pdk/sky130A/libs.ref/sky130_fd_pr/mag
 - Make sure all connections should be proper.
 - Don’t make any short’s and open connections.
 
- <img width="1260" height="682" alt="image" src="https://github.com/user-attachments/assets/dc91ab2a-540b-4c34-ae99-8f8019cc4231" />
+  <img width="1260" height="682" alt="image" src="https://github.com/user-attachments/assets/dc91ab2a-540b-4c34-ae99-8f8019cc4231" />
 
 - After completing the connections save the schematic with file filename.
 - Click on Simulations, then select lvs, then click on Lvs netlist.
+
+  <img width="1262" height="680" alt="image" src="https://github.com/user-attachments/assets/7f0666dd-38a5-4fdb-ab91-429c270d9504" />
+
+- Click on Netlist. It will create a netlist of your schematic.
+
+  <img width="1443" height="1020" alt="image" src="https://github.com/user-attachments/assets/e2e44aa0-09c0-4415-b131-16f0e097d883" />
+
+- If all connections are made properly then the netlist will blink in green colour.
+- Here it ends the schematic design of your circuit.
+
+
+
+
+
+
+
+
+
 
