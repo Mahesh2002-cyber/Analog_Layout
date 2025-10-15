@@ -12,7 +12,9 @@ To provide comprehensive documentation, best practices, and workflow guidelines 
   - [1.2 PDK Required](#12-pdk-required)
   - [1.3 Install and Setup EDA Tools](#13-install-and-setup-eda-tools)
 - [2. Brief about complimentary CMOS Transistors](#2-Brief-about-complimentary-CMOS-Transistors)
-  - [1.1 Schematic of CMOS Inverter](#1.1-Schematic-of-CMOS-Inverter)
+  - [2.1 Schematic of CMOS Inverter](#1.1-Schematic-of-CMOS-Inverter)
+  - [2.2 Layout view(top_view) of NMOS and PMOS transistors](#1.2-Layout-view(top_view)-of-NMOS-and-PMOS-transistors)
+  - [2.3 Physical Layout view of CMOS Inverter](#1.3-Physical-Layout-view-of-CMOS-Inverter)
 
 
 
@@ -141,6 +143,13 @@ addpath $HOME/share/pdk/sky130A/libs.ref/sky130_fd_pr/mag
 - CMOS Inverter Consists of a PMOS and a NMOS connected in following fashion.
 - Stick diagram explains the positioning of P-diffusion, N-diffusion and
   polysilicon positioning.
-
+## 2.1 Schematic and stick Diagram
 <img width="1146" height="511" alt="image" src="https://github.com/user-attachments/assets/c2df450b-3639-4e3f-ac54-5587ef346952" />
+
+## 2.2 Layout view (top_view) of NMOS and PMOS Transistors
+<img width="1245" height="811" alt="image" src="https://github.com/user-attachments/assets/232c2136-3f02-474e-a105-99fc07677834" />
+
+## 2.3 Physical Layout view of CMOS Inverter
+<img width="1146" height="866" alt="image" src="https://github.com/user-attachments/assets/c9ac189a-acba-4f47-8dcb-56d4b605f998" />
+
 
