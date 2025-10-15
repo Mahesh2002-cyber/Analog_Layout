@@ -11,8 +11,7 @@ To provide comprehensive documentation, best practices, and workflow guidelines 
   - [1.1 Tools Required](#11-tools-required)
   - [1.2 PDK Required](#12-pdk-required)
   - [1.3 Install and Setup EDA Tools](#13-install-and-setup-eda-tools)
-
-
+- [2. Writing a Netlist](#2-writing-a-netlist)
 
 
 
@@ -114,6 +113,16 @@ work
 .xschem/
 └── simulations
 ```
+### PDK Linking with Magic:
+
+```
+vim ~/.magicrc
+```
+- Inside the file save this:
+```
+tech load $HOME/share/pdk/sky130A/libs.tech/magic/sky130A.tech
+addpath $HOME/share/pdk/sky130A/libs.ref/sky130_fd_pr/mag
+```
 
 # 2. Writing a Netlist
 - To write a netlist in ``Ngspice`` we need to follow these steps.
@@ -123,3 +132,4 @@ mkdir IC_Char
 cd IC_Char
 ```
 - Make a new file ``vim file_name.sp`` to open a spice file (`.sp` is the file extension) with ``vim`` as a **Text Editor**. 
+
