@@ -15,7 +15,8 @@ To provide comprehensive documentation, best practices, and workflow guidelines 
   - [2.1 Schematic of CMOS Inverter](#1.1-Schematic-of-CMOS-Inverter)
   - [2.2 Layout view(top_view) of NMOS and PMOS transistors](#1.2-Layout-view(top_view)-of-NMOS-and-PMOS-transistors)
   - [2.3 Physical Layout view of CMOS Inverter](#1.3-Physical-Layout-view-of-CMOS-Inverter)
-
+- [3. Schematic drawing in xschem](#3-Schematic-drawing-in-xschem)
+  - [3.1 Steps to make the schematic in xschem](#3.1-Steps-to-make-the-schematic-in-xschem)
 
 
 
@@ -152,4 +153,50 @@ addpath $HOME/share/pdk/sky130A/libs.ref/sky130_fd_pr/mag
 ## 2.3 Physical Layout view of CMOS Inverter
 <img width="1146" height="866" alt="image" src="https://github.com/user-attachments/assets/c9ac189a-acba-4f47-8dcb-56d4b605f998" />
 
+# 3 Schematic drawing in xschem
+
+## 3.1 Steps to make the schematic in xschem
+- Open terminal in ubuntu, Type “cd work/xschem”.
+- Type ”xschem”, It opens the xschem window.
+- Go to file select create new window/tab.
+- Then press “shift+I” to get instance (devices).
+- Select your xschem path in that select technology file “sky130_fd_pr”.
+
+  <img width="719" height="355" alt="image" src="https://github.com/user-attachments/assets/7e28a9bd-e7f2-4bcc-bdb5-c1bf51566d07" />
+
+- Then select “pfet3_01v8.sym”, for PMOS device
+- Select the devicce
+
+  <img width="719" height="353" alt="image" src="https://github.com/user-attachments/assets/6eb26a7a-eb57-4aac-9450-cc2b8b2c910c" />
+
+- Click on schematic editor window.
+- Again press “shit+i” select “nfet3_01v8.sym” for NMOS.
+
+  <img width="725" height="354" alt="image" src="https://github.com/user-attachments/assets/4fdeca55-9551-4b3b-81e8-c143b6a8a627" />
+
+- Connect the terminals as per circuit diagram. Use “w” for wire or select the tip of the terminal and drag.
+- Give the pins as per signal flow.
+- To get pins press “shift+i” choose device library, in that select ipin, for input.
+
+  <img width="724" height="417" alt="image" src="https://github.com/user-attachments/assets/d0dba855-1f76-4c67-b074-e50e32dbf9f3" />
+
+- Same for output pin press “shift+i” choose device library, in that select opin.
+- Repeate the above step for all pins.
+
+  <img width="723" height="422" alt="image" src="https://github.com/user-attachments/assets/af95a0a4-332c-4e2b-a86a-182bdd115d30" />
+
+- Connect all the pins, Then give a pin name(label) by selecting the pin and press “Q”.
+- Here new window will pop-up, give a pin name and click on ok.
+
+  <img width="682" height="320" alt="image" src="https://github.com/user-attachments/assets/05a301ed-cb4d-403b-9b94-ddab54772659" />
+
+- Repeat the above step for all pins.
+- Make all connections as per circuit diagram.
+- Make sure all connections should be proper.
+- Don’t make any short’s and open connections.
+
+ <img width="1260" height="682" alt="image" src="https://github.com/user-attachments/assets/dc91ab2a-540b-4c34-ae99-8f8019cc4231" />
+
+- After completing the connections save the schematic with file filename.
+- Click on Simulations, then select lvs, then click on Lvs netlist.
 
