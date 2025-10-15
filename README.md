@@ -41,7 +41,9 @@ For the simulation of circuits we will need the following tools.
 ### Magic_vlsi
 ![Diagram](Doc/magic_vlsi.png)
 
-[Magic_vlsi](http://opencircuitdesign.com/magic/)
+[Magic_vlsi](http://opencircuitdesign.com/magic/)The open-source license has allowed VLSI engineers with a bent toward programming to implement clever ideas and help magic stay abreast of fabrication technology. However, it is the well thought-out core algorithms which lend to magic the greatest part of its popularity. Magic is widely cited as being the easiest tool to use for circuit layout, even for people who ultimately rely on commercial tools for their product design flow.
+
+[Magic_vlsi Reference Manual](http://opencircuitdesign.com/magic/techref/maint2.html)Complete Reference manual for your reference.
 
 ## 1.2 PDK Required
 
