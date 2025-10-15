@@ -38,6 +38,9 @@ For the simulation of circuits we will need the following tools.
 
 [Xschem Reference Manual](https://xschem.sourceforge.io/stefan/xschem_man/xschem_man.html): Complete reference manual in HTML format.
 
+### Magic_vlsi
+
+
 ## 1.2 PDK Required
 
 A process design kit (PDK) is a set of files used within the semiconductor industry to model a fabrication process for the design tools used to design an integrated circuit. The PDK is created by the foundry defining a certain technology variation for their processes. It is then passed to their customers to use in the design process.
