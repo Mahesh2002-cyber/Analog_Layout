@@ -26,14 +26,14 @@ For the simulation of circuits we will need the following tools.
 - Schematic Editor - [[Xschem](https://xschem.sourceforge.io/stefan/index.html)]
 
 ### Ngspice
-![Diagram](Logo/Ngspice.png)
+![Diagram](Doc/nglogo.jpg)
 
 [Ngspice](http://ngspice.sourceforge.net/devel.html) is the open source spice simulator for electric and electronic circuits. Ngspice is an open project, there is no closed group of developers.
 
 [Ngspice Reference Manual](https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml): Complete reference manual in HTML format.
 
 ### Xschem
-![Diagram](Logo/Xschem.PNG)
+![Diagram](Doc/xschem logo.png)
 
 [Xschem](https://xschem.sourceforge.io/stefan/) is an open-source schematic capture tool for VLSI and electronics. It is designed to be lightweight, fast, and capable of handling large hierarchical circuits while remaining user-friendly.
 
@@ -45,7 +45,7 @@ A process design kit (PDK) is a set of files used within the semiconductor indus
 
 The PDK we are going to use is [Google Skywater 130nm PDK](https://skywater-pdk.readthedocs.io/en/main/).
 
-![Diagram](Logo/SKY130_PDK.png)
+![Diagram](Doc/Skywater130.png)
 
 Device Details: [docs](https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html)
 
