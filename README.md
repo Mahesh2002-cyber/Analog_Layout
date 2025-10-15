@@ -17,6 +17,7 @@ To provide comprehensive documentation, best practices, and workflow guidelines 
   - [2.3 Physical Layout view of CMOS Inverter](#1.3-Physical-Layout-view-of-CMOS-Inverter)
 - [3. Schematic drawing in xschem](#3-Schematic-drawing-in-xschem)
   - [3.1 Steps to make the schematic in xschem](#3.1-Steps-to-make-the-schematic-in-xschem)
+  - [3.2 Generating netlist of a schematic](#3.2-Generating-netlist-of-a-schematic)
 
 
 
@@ -199,6 +200,7 @@ addpath $HOME/share/pdk/sky130A/libs.ref/sky130_fd_pr/mag
   <img width="1260" height="682" alt="image" src="https://github.com/user-attachments/assets/dc91ab2a-540b-4c34-ae99-8f8019cc4231" />
 
 - After completing the connections save the schematic with file filename.
+## 3.2 Generating netlist of a schematic
 - Click on Simulations, then select lvs, then click on Lvs netlist.
 
   <img width="1262" height="680" alt="image" src="https://github.com/user-attachments/assets/7f0666dd-38a5-4fdb-ab91-429c270d9504" />
