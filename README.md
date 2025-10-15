@@ -33,7 +33,7 @@ For the simulation of circuits we will need the following tools.
 [Ngspice Reference Manual](https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml): Complete reference manual in HTML format.
 
 ### Xschem
-![Diagram](Doc/xschem logo.png)
+![Diagram](Doc/xschem_logo.png)
 
 [Xschem](https://xschem.sourceforge.io/stefan/) is an open-source schematic capture tool for VLSI and electronics. It is designed to be lightweight, fast, and capable of handling large hierarchical circuits while remaining user-friendly.
 
