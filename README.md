@@ -39,7 +39,9 @@ For the simulation of circuits we will need the following tools.
 [Xschem Reference Manual](https://xschem.sourceforge.io/stefan/xschem_man/xschem_man.html): Complete reference manual in HTML format.
 
 ### Magic_vlsi
+![Diagram](Doc/magic_vlsi.png)
 
+[Magic_vlsi](http://opencircuitdesign.com/magic/)
 
 ## 1.2 PDK Required
 
