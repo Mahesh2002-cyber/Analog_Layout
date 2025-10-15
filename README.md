@@ -114,3 +114,12 @@ work
 .xschem/
 └── simulations
 ```
+
+# 2. Writing a Netlist
+- To write a netlist in ``Ngspice`` we need to follow these steps.
+- Open terminal and enter your working directory and type the following code:
+```
+mkdir IC_Char
+cd IC_Char
+```
+- Make a new file ``vim file_name.sp`` to open a spice file (`.sp` is the file extension) with ``vim`` as a **Text Editor**. 
