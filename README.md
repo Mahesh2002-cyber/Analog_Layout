@@ -19,6 +19,7 @@ To provide comprehensive documentation, best practices, and workflow guidelines 
   - [3.1 Steps to make the schematic in xschem](#3.1-Steps-to-make-the-schematic-in-xschem)
   - [3.2 Generating netlist of a schematic](#3.2-Generating-netlist-of-a-schematic)
 - [4. Magic_vlsi Layout](#4-Magic-vlsi-Layout)
+  - 
 
 
 # 1. Tools and PDK setup
