@@ -19,6 +19,7 @@ To provide comprehensive documentation, best practices, and workflow guidelines 
   - [3.1 Steps to make the schematic in xschem](#3.1-Steps-to-make-the-schematic-in-xschem)
   - [3.2 Generating netlist of a schematic](#3.2-Generating-netlist-of-a-schematic)
 - [4. Magic_vlsi Layout](#4-Magic-vlsi-Layout)
+  - [4.1 About Magic_vlsi](#4.1-About-Magic_vlsi)
   - 
 
 
@@ -213,7 +214,16 @@ addpath $HOME/share/pdk/sky130A/libs.ref/sky130_fd_pr/mag
 - If all connections are made properly then the netlist will blink in green colour.
 - Here it ends the schematic design of your circuit.
 
+# 4. Magic_vlsi Layout
 
+## 4.1 About Magic_vlsi
+
+
+- MAGIC has its backronym as Manhattan Artwork Generator for Integrated Circuits.
+- MAGIC is a venerable and easy to use VLSI layout tool.
+- Magic features real-time design rule checking, something that some costly commercial VLSI design software packages don't feature Magic is based on "scalable CMOS" style of design using "lambda-based" dimensions.
+- This Layout tool helps to identify the hidden parasitics in the design.
+- MAGIC is available on Linux. For Windows, additional installations are required.
 
 
 
