@@ -232,8 +232,12 @@ addpath $HOME/share/pdk/sky130A/libs.ref/sky130_fd_pr/mag
 - The grid is a square predefined with 'X' dimensions in the Layout window To change the grid dimensions: Go to View -> Select a Grid Dimension Go to Options and Click on Toolbar The toolbar contains all design essentials necessary for a layout for example nwell, pwell, pdiffusion layer, polysilicon, pdcontact etc.
 
   <img width="1452" height="841" alt="image" src="https://github.com/user-attachments/assets/95dfc403-601f-4262-94e3-c68ae1279723" />
-                                           Fig:- Layout Window
 
+ - The above fig. shows the Layout window.
+
+   <img width="990" height="356" alt="image" src="https://github.com/user-attachments/assets/b3751d08-d639-41db-bd2a-443e1592e55a" />
+
+ - The above fig. shows the Console window.
 
 
 
