@@ -20,6 +20,7 @@ To provide comprehensive documentation, best practices, and workflow guidelines 
   - [3.2 Generating netlist of a schematic](#3.2-Generating-netlist-of-a-schematic)
 - [4. Magic_vlsi Layout](#4-Magic-vlsi-Layout)
   - [4.1 About Magic_vlsi](#4.1-About-Magic_vlsi)
+  - [4.2 Magic Setup](#4.2-Magic-Setup)
   - 
 
 
@@ -218,15 +219,20 @@ addpath $HOME/share/pdk/sky130A/libs.ref/sky130_fd_pr/mag
 
 ## 4.1 About Magic_vlsi
 
-
 - MAGIC has its backronym as Manhattan Artwork Generator for Integrated Circuits.
 - MAGIC is a venerable and easy to use VLSI layout tool.
 - Magic features real-time design rule checking, something that some costly commercial VLSI design software packages don't feature Magic is based on "scalable CMOS" style of design using "lambda-based" dimensions.
 - This Layout tool helps to identify the hidden parasitics in the design.
 - MAGIC is available on Linux. For Windows, additional installations are required.
 
+## 4.2 Magic Setup
+- Recommended to use a MOUSE.
+- Magic contains 2 windows: Layout window (Designing) and Console Window (Commands) In the Layout window,
+- Press "g" to view grid
+- The grid is a square predefined with 'X' dimensions in the Layout window To change the grid dimensions: Go to View -> Select a Grid Dimension Go to Options and Click on Toolbar The toolbar contains all design essentials necessary for a layout for example nwell, pwell, pdiffusion layer, polysilicon, pdcontact etc.
 
-
+  <img width="1452" height="841" alt="image" src="https://github.com/user-attachments/assets/95dfc403-601f-4262-94e3-c68ae1279723" />
+                                           Fig:- Layout Window
 
 
 
