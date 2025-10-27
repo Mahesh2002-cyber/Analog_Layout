@@ -293,8 +293,78 @@ It’s consider that whole area is “pwell”.
 
    <img width="1089" height="765" alt="image" src="https://github.com/user-attachments/assets/2a9c1ace-9ad6-4834-90b5-2f965dbd6f4c" />
 
-Fig:-
+<p align="center"><b>Fig:- Create NMOS</b></p>
+
+
+ - Select the area at the diffusion and click on “locali” from the toolbar or type “paint locali” in console window.
+ - Repeat the above step for all source and drain terminals.
+ - Then select small area inside the locali and select pdcontact for pdiffusion or type “paint pdc” in console window and select ndcontact for ndiffusion or type “paint        ndc” in console window.
    
+  <img width="1094" height="915" alt="image" src="https://github.com/user-attachments/assets/87ec28d6-1cc2-41ca-898b-753ec7f55def" />
+
+<p align="center"><b>Fig:- Create local contact to connect base layers to metal (i.e., locali)</b></p>
+
+ - To create Body terminal of the pmos select Ntap from the tool bar or type “paint ntap” in console window. Ntap should be inside the nwell.
+ - To create body terminal of the nmos select ptap from the tool bar or type ”paint ptap”.
+ - Then draw locali (inter connect) layer on top of the Ntap and Ptap layers by selecting from the toolbar or type “paint li” in console window.
+ - Then draw Ptap contact on top of ptap layer by selecting from toolbar or type “paint ptapc” in console window.
+ - Draw Ntap contact on top of the Ntap layer or type “paint Ntapc” in console window.
+
+<img width="1442" height="948" alt="image" src="https://github.com/user-attachments/assets/1a8fb8c3-6a15-49cb-a586-c5f0e57dbcf5" />
+
+<p align="center"><b>Fig:- Created body terminals of both transistors</b></p>
+
+  <img width="1448" height="953" alt="image" src="https://github.com/user-attachments/assets/a1311c23-a4a4-449e-9e76-819392dee97d" />
+
+<p align="center"><b>Fig:- Ntap and Ptap with (inter connect) locali layer.</b></p>
+
+
+
+ - Connect source of PMOS to the Ntap (vdd) with locali layer by selecting from toolbar or type “paint li” in console window.
+ - Connect source of NMOS to the Ptap (gnd) with locali layer by selecting from toolbar or type “paint li” in console window.
+ - To make gate contact extend polysilicon on gate then draw locali on top of polysilicon, then draw poly contact on top of locali layer or type “paint polyc” in console       window.
+ - Make sure the poly contact should be enclosed with polysilicon.
+
+
+   <img width="1443" height="947" alt="image" src="https://github.com/user-attachments/assets/1a8e53bb-c580-429f-8592-08902579f9f1" />
+
+<p align="center"><b>Fig:- Created Gate contact and Source terminals are connected to body.</b></p>
+
+
+ - Select the area on top of body terminals and gate contact then draw metal1 layer by selecting from toolbar or type “paint m1” in console window.
+ - Draw locali contact on top of metal1 to connect metal with locali layer or type “paint mcon” in console window.
+ - Connect both drain terminals by using metal1 and metal contact.
+ - Select area inside the gate contact and type “label input-name” in console window.
+ - Repeat the above step for vdd, gnd, and output with their respective names.
+
+
+   <img width="1445" height="949" alt="image" src="https://github.com/user-attachments/assets/05a8f152-7831-4c94-bff8-90d45ab04b08" />
+
+<p align="center"><b>Fig:- Connect metal1 to the gate and body terminals.</b></p>
+
+
+   <img width="1448" height="949" alt="image" src="https://github.com/user-attachments/assets/3742433d-1f19-4a53-aafc-3f7c217d8040" />
+
+<p align="center"><b>Fig:- Connected drain terminals with metal1 for output.</b></p>
+
+
+ - port the labels by using syntax “port label-name make port-direction”.
+   **"Ex: port vdd make inout."**
+ - Make sure DRC should clean up to here, then layout designing is over.
+ - To check LVS or to see design parameters we need to extract the layout.
+
+## 4.6 Procedure to extract the layout:
+
+ - To extract layout type “Extract all” in console window. It will be extracted to “.ext” file.
+ - To convert .ext file to spice net list type “ext2spice lvs”.
+ - Then type “ext2spice” it will extract all layers In layout.
+ - To check the extracted file go to ubuntu terminal and type “ls”. It shows list of files.
+
+
+
+
+
+
 
 
 
