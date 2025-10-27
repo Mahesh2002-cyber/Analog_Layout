@@ -275,7 +275,25 @@ It’s consider that whole area is “pwell”.
 
    <img width="1088" height="556" alt="image" src="https://github.com/user-attachments/assets/0ae08fbb-638b-4eb3-9c4e-01ef58026c6f" />
   <p align="center"><b>Fig:- Create Nwell</b></p>
-  
+ - Select a smaller region within the nwell of 12λ*8λ to make a P=diffusion layer then select the p-diffusion by clicking on scroll-wheel on the mouse or type “paint pdiff”    in console window.
+
+   <img width="1094" height="557" alt="image" src="https://github.com/user-attachments/assets/a3d30437-b7a9-4334-8ab3-63fe276b34b4" />
+
+  <p align="center"><b> Fig:- Create p-diffusion inside nwell</b></p>
+
+ - Select area to create polysilicon and select polysilicon by clicking scroll wheel of mouse or type “paint poly” in console window.
+
+   <img width="1090" height="559" alt="image" src="https://github.com/user-attachments/assets/bb02e4da-292f-416b-aa08-b2b9ffabd7a3" />
+
+
+<p align="center"><b>Fig:- Creating polisilicon</b></p>
+
+ - To make Nmos, select the n-diffusion layer from the toolbar or type “paint ndiff” in console window.
+ - Then select polysilicon from the toolbar to make gate terminal or type “paint poly” in console window.
+
+   <img width="1089" height="765" alt="image" src="https://github.com/user-attachments/assets/2a9c1ace-9ad6-4834-90b5-2f965dbd6f4c" />
+
+Fig:-
    
 
 
