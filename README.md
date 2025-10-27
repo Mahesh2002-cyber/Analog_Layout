@@ -281,8 +281,10 @@ It’s consider that whole area is “pwell”.
  - Check the drc continuously after adding new layer.
 
    <img width="1088" height="556" alt="image" src="https://github.com/user-attachments/assets/0ae08fbb-638b-4eb3-9c4e-01ef58026c6f" />
+   
   <p align="center"><b>Fig:- Create Nwell</b></p>
- - Select a smaller region within the nwell of 12λ*8λ to make a P=diffusion layer then select the p-diffusion by clicking on scroll-wheel on the mouse or type “paint pdiff”    in console window.
+  
+ - Select a smaller region within the nwell of 12λ*8λ to make a P=diffusion layer then select the p-diffusion by clicking on scroll-wheel on the mouse or type “paint pdiff” in console window.
 
    <img width="1094" height="557" alt="image" src="https://github.com/user-attachments/assets/a3d30437-b7a9-4334-8ab3-63fe276b34b4" />
 
