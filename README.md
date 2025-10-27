@@ -273,7 +273,12 @@ It’s consider that whole area is “pwell”.
 
 ## 4.5 Steps to make Layout for CMOS Inverter in Magic tool.
  - Open the magic tool by typing “magic” in ubuntu terminal.
- - Select the box in layout window using left and right buttons of mouse with the minimum dimensions of 25λ*23λ (keep device length and widths as per schematic), select the    N-well from the tool bar or type “paint nwell” in console window.
+ - Select the box in layout window using left and right buttons of mouse (press left click on one edge and right click on another edge) with the minimum dimensions of 25λ*23λ (keep device length and widths as per schematic), select the N-well from the tool bar or type “paint nwell” in console window.
+ - Click on DRC option which is present in top of the layoutwindow.
+ - There it will shows the drc errors.
+ - If you want to read the DRc msg, then clickon drc option and click on update.
+ - There it will display the DRC msg if any DRC error present in the layout.
+ - Check the drc continuously after adding new layer.
 
    <img width="1088" height="556" alt="image" src="https://github.com/user-attachments/assets/0ae08fbb-638b-4eb3-9c4e-01ef58026c6f" />
   <p align="center"><b>Fig:- Create Nwell</b></p>
