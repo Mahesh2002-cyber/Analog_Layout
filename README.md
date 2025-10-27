@@ -23,6 +23,7 @@ To provide comprehensive documentation, best practices, and workflow guidelines 
   - [4.2 Magic Setup](#4.2-Magic-Setup)
   - [4.3 Basic functions in MAGIC.](#4.3-Basic-functions-in-MAGIC)
   - [4.4 Lambda Based Design Rules](#4.4-Lambda-Based-Design-Rules)
+  - [4.5 Steps to make Layout for CMOS Inverter in Magic tool.](#4.5-Steps-to-make-Layout-for-CMOS-Inverter-in-Magic-tool)
 
 
 # 1. Tools and PDK setup
@@ -234,11 +235,11 @@ addpath $HOME/share/pdk/sky130A/libs.ref/sky130_fd_pr/mag
 
   <img width="1452" height="841" alt="image" src="https://github.com/user-attachments/assets/95dfc403-601f-4262-94e3-c68ae1279723" />
 
- - The above fig. shows the Layout window.
+  <p align="center"><b>Fig.Layout window.</b></p>
 
    <img width="990" height="356" alt="image" src="https://github.com/user-attachments/assets/b3751d08-d639-41db-bd2a-443e1592e55a" />
 
- - The above fig. shows the Console window.
+<p align="center"><b>Fig.Console window.</b></p>
 
  - To check the Technology File: Go to Options.
  - Open Tech Manager - Technology should be “sky130A”.
@@ -267,4 +268,16 @@ It’s consider that whole area is “pwell”.
  - Width of NMOS = 4 λ
  - Width of PMOS = 8 λ
  - Contact = 4 λ
+
+## 4.5 Steps to make Layout for CMOS Inverter in Magic tool.
+ - Open the magic tool by typing “magic” in ubuntu terminal.
+ - Select the box in layout window using left and right buttons of mouse with the minimum dimensions of 25λ*23λ (keep device length and widths as per schematic), select the    N-well from the tool bar or type “paint nwell” in console window.
+
+   <img width="1088" height="556" alt="image" src="https://github.com/user-attachments/assets/0ae08fbb-638b-4eb3-9c4e-01ef58026c6f" />
+  <p align="center"><b>Fig:- Create Nwell</b></p>
+  
+   
+
+
+
 
