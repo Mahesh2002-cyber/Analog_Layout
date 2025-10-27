@@ -24,8 +24,8 @@ To provide comprehensive documentation, best practices, and workflow guidelines 
   - [4.3 Basic functions in MAGIC.](#4.3-Basic-functions-in-MAGIC)
   - [4.4 Lambda Based Design Rules](#4.4-Lambda-Based-Design-Rules)
   - [4.5 Steps to make Layout for CMOS Inverter in Magic tool.](#4.5-Steps-to-make-Layout-for-CMOS-Inverter-in-Magic-tool)
-  - [4.6 Procedure to extract the layout])(#4.6-Procedure-to-extract-the-layout)
-  - [4.7 Procedure to do LVS (Layout vs Schematic)](#4.7-Procedure-to-do-LVS-(Layout vs Schematic))
+  - [4.6 Procedure to extract the layout](#4.6-Procedure-to-extract-the-layout)
+  - [4.7 Procedure to do LVS (Layout vs Schematic)](#4.7-Procedure-to-do-LVS-(Layout-vs-Schematic))
 
 
 # 1. Tools and PDK setup
