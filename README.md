@@ -25,6 +25,7 @@ To provide comprehensive documentation, best practices, and workflow guidelines 
   - [4.4 Lambda Based Design Rules](#4.4-Lambda-Based-Design-Rules)
   - [4.5 Steps to make Layout for CMOS Inverter in Magic tool.](#4.5-Steps-to-make-Layout-for-CMOS-Inverter-in-Magic-tool)
   - [4.6 Procedure to extract the layout])(#4.6-Procedure-to-extract-the-layout)
+  - [4.7 Procedure to do LVS (Layout vs Schematic)](#4.7-Procedure-to-do-LVS-(Layout vs Schematic))
 
 
 # 1. Tools and PDK setup
@@ -357,14 +358,37 @@ It’s consider that whole area is “pwell”.
 ## 4.6 Procedure to extract the layout:
 
  - To extract layout type “Extract all” in console window. It will be extracted to “.ext” file.
+ - To extract layout parasetics type "-c 1fF" in console window.
  - To convert .ext file to spice net list type “ext2spice lvs”.
  - Then type “ext2spice” it will extract all layers In layout.
  - To check the extracted file go to ubuntu terminal and type “ls”. It shows list of files.
 
+  <img width="990" height="339" alt="image" src="https://github.com/user-attachments/assets/c2c72eb0-93a3-4bea-8ab4-ad7956f47b66" />
+
+ - To open the spice file type “vim file-name.spice”. in ubuntu terminal.
+ - The spice file contains device parameters like length, width, parasitics, etc.
+
+## 4.7 Procedure to do LVS (Layout vs Schematic)
+
+ - Save the schematic and click on simulation tab and select lvs then click on lvs netlist + top level is a subckt.
+
+  <img width="1263" height="709" alt="image" src="https://github.com/user-attachments/assets/1e46f68a-aaa4-407a-8998-09c299d6fdf8" />
 
 
+ - After generating the schematic netlist we need to compare it with layout “.spice” file.
+ - For that we need to add both file paths in the terminal.
+ - The syntax is netgen lvs “ .xschem (schematic) path” “ .spice (layout) path” pdk file path.
+   **Ex:- netgen lvs "/home/umahe/.xschem/simulations/inv.spice inv" "/home/umahe/inv.spice inv" /home/umahe/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl**
+ - This will check both schematic netlist and layout spice file and produce the output.
+ - If layout matches with the schematic it will show “Circuit matches uniquely.”
+
+  <img width="677" height="409" alt="image" src="https://github.com/user-attachments/assets/84165cc1-b614-4c80-941c-a0ca6693751f" />
 
 
+<p align="center"><b>Fig:- LVS Result window.</b></p>
+
+ - If both are not matched, change the parameters according to the schematic and check the lvs again.
+ - This ends the Layout design when both lvs and drc clean.
 
 
 
