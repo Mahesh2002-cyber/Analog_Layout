@@ -21,7 +21,8 @@ To provide comprehensive documentation, best practices, and workflow guidelines 
 - [4. Magic_vlsi Layout](#4-Magic-vlsi-Layout)
   - [4.1 About Magic_vlsi](#4.1-About-Magic_vlsi)
   - [4.2 Magic Setup](#4.2-Magic-Setup)
-  - 
+  - [4.3 Basic functions in MAGIC.](#4.3-Basic-functions-in-MAGIC)
+  - [4.4 Lambda Based Design Rules](#4.4-Lambda-Based-Design-Rules)
 
 
 # 1. Tools and PDK setup
@@ -239,6 +240,31 @@ addpath $HOME/share/pdk/sky130A/libs.ref/sky130_fd_pr/mag
 
  - The above fig. shows the Console window.
 
+ - To check the Technology File: Go to Options.
+ - Open Tech Manager - Technology should be “sky130A”.
+
+   <img width="388" height="213" alt="image" src="https://github.com/user-attachments/assets/f6f83ece-10de-472d-98a4-7bf711246002" />
 
 
+## 4.3 Basic functions in MAGIC.
+It’s consider that whole area is “pwell”.
+ - To select a square in Magic:-
+   Use left-mouse click to select bottom left vertex and right-mouse click at the diagonally opposite vertex of required cell block to select it.
+ - To paint an area inside a square:-
+   After selecting the box, from the tool-bar select the material to fill in the box by clicking on the scroll-wheel on the mouse.
+   If you don’t have a mouse, write paint<material name> in the console window.
+ - To erase an area inside a square:-
+   To erase material from the selected box, click the Scroll-wheel on the mouse over an empty area(P-well).
+   If you don’t have a mouse, write erase in the console window.
+
+## 4.4 Lambda Based Design Rules.
+ - Lambda(λ) = 90nm (By default equivalent to 1 grid size) Lambda is a scale factor used to define the minimum technology geometry. Layout items are aligned toa grid which represents a basic unit of spacing determined by the <technology file>.
+ - Minimum Permissible dimensions of the following parameters in terms of ‘λ’.
+ - N-well = 12λ
+ - P-diffusion = 3 λ
+ - N-diffusion = 3 λ
+ - Channel length = 2 λ
+ - Width of NMOS = 4 λ
+ - Width of PMOS = 8 λ
+ - Contact = 4 λ
 
