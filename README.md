@@ -29,6 +29,8 @@ To provide comprehensive documentation, best practices, and workflow guidelines 
 - [5. KLayout](#5-KLayout)
   - [5.1 About KLayout](#5.1-About-KLayout)
   - [5.2 Installation and setup](#5.2-Installation-and-setup)
+  - [5.3 Install SKY130-pdk and setup to Klayout](#5.3-Install-SKY130-pdk-and-setup-to-Klayout)
+  - [5.4 Inverter layout using Pcell.](#5.4-Inverter-layout-using-Pcell.)
 
 
 # 1. Tools and PDK setup
@@ -451,9 +453,25 @@ It’s consider that whole area is “pwell”.
  - **Note:** If you are using a Linux distribution that discourages the installation of system-wide Python packages through pip, you need to pass `--break-system-packages`.
 
 
+## 5.3 Install SKY130-pdk and setup to Klayout
+
+ - Type `klayout -e` in Ubuntu terminal to open klayout in editor window.
+ - Click on **tools** option, then select **manage packages**.
+ - Select package and give right click on your mouse.
+ - Click on mark all and click on Apply then ok.
+ - After Installing all packages close the packages window then click settings icon in editor window and select  `SKY130` or `SKY130A-el`
+
+   <img width="1379" height="942" alt="Screenshot 2025-10-28 145905" src="https://github.com/user-attachments/assets/02f03f90-6dd3-43d6-a475-667ce4200370" />
+
+ - open new layout from the file menu.
+ - It will open layout editor window with layers present in sky130 pdk.
 
 
-    
+## 5.4 Inverter layout using Pcell.
+  
+ - Open new layout editor window from the file menu.
+ - Give **Top cell** name and **Initial layer** name then click on ok.
+ - 
 
 
 
