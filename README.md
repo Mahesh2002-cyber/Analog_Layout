@@ -415,12 +415,48 @@ It’s consider that whole area is “pwell”.
  - Click on **Get Klayout** which is present at the top of window.
    <img width="1695" height="758" alt="Screenshot 2025-10-28 122537" src="https://github.com/user-attachments/assets/fbf1208f-1167-4c27-bdf8-5b9b0cf069a7" />
 
- - Select updated version of klayout in lsited below.
+ - Select updated ubuntu version of klayout in below list and download.
+ - Open Ubuntu terminal and use the commands to install Klayout.
+
+```
+  sudo apt update
+```
+ - Then
+
+```
+  sudo apt installklayout
+```
+
+ - After Installing klayout Install python file also.
+
+```
+  
+  sudo apt install python3-pip
+```
+   
+**Important:** The pymacros for Sky130 are currently not compatible with the latest version of gdsfactory. The solution is to install an earlier version (before `gdsfactory.typings` change). But there is another problem: installing an older version of gdsfactory also installs the latest possible versions of the dependencies. This is a problem for `pydantic` because it wasn't pinned to a 1.x version and installing a 2.x version will break gdsfactory.
+
+ - Therefore, the solutions is to install pydantic<2 first:
+
+   ```
+   pip3 install pydantic==1.10
+   ```
+
+   - And afterwards gdsfactory:
+
+  ```
+  pip3 install gdsfactory==6.33.0
+   
+  ```
+ - **Note:** If you are using a Linux distribution that discourages the installation of system-wide Python packages through pip, you need to pass `--break-system-packages`.
+
+
+
 
     
 
 
- - 
+
 
 
 
