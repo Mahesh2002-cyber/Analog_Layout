@@ -26,6 +26,8 @@ To provide comprehensive documentation, best practices, and workflow guidelines 
   - [4.5 Steps to make Layout for CMOS Inverter in Magic tool.](#4.5-Steps-to-make-Layout-for-CMOS-Inverter-in-Magic-tool)
   - [4.6 Procedure to extract the layout](#4.6-Procedure-to-extract-the-layout)
   - [4.7 Procedure to do LVS (Layout vs Schematic)](#4.7-Procedure-to-do-LVS-(Layout-vs-Schematic))
+- [5. KLayout](#5-KLayout)
+  - [5.1 About KLayout](#5.1-About-KLayout)
 
 
 # 1. Tools and PDK setup
@@ -396,6 +398,16 @@ It’s consider that whole area is “pwell”.
 
  - If both are not matched, change the parameters according to the schematic and check the lvs again.
  - This ends the Layout design when both lvs and drc clean.
+
+
+# 5. KLayout
+## 5.1 About KLayout
+
+ <img width="225" height="225" alt="image" src="https://github.com/user-attachments/assets/3a4f11d2-8599-4cd0-a793-7018a4ebb0d6" />
+
+[KLayout](https://www.klayout.de/doc/manual/basic.html)KLayout itself is a layout viewer and editor primarily used for integrated circuit design, and it does not directly produce or use HTML documents for its core functionality of layout editing.
+
+[KLayout reference file](https://www.klayout.de/doc/manual/index.html)Complete manual for reference.
 
 
 
