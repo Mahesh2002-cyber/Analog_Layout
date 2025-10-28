@@ -28,6 +28,7 @@ To provide comprehensive documentation, best practices, and workflow guidelines 
   - [4.7 Procedure to do LVS (Layout vs Schematic)](#4.7-Procedure-to-do-LVS-(Layout-vs-Schematic))
 - [5. KLayout](#5-KLayout)
   - [5.1 About KLayout](#5.1-About-KLayout)
+  - [5.2 Installation and setup](#5.2-Installation-and-setup)
 
 
 # 1. Tools and PDK setup
@@ -405,9 +406,74 @@ It’s consider that whole area is “pwell”.
 
  <img width="225" height="225" alt="image" src="https://github.com/user-attachments/assets/3a4f11d2-8599-4cd0-a793-7018a4ebb0d6" />
 
-[KLayout](https://www.klayout.de/doc/manual/basic.html)KLayout itself is a layout viewer and editor primarily used for integrated circuit design, and it does not directly produce or use HTML documents for its core functionality of layout editing.
+[KLayout](https://www.klayout.de/doc/manual/basic.html) KLayout itself is a layout viewer and editor primarily used for integrated circuit design, and it does not directly produce or use HTML documents for its core functionality of layout editing.
 
-[KLayout reference file](https://www.klayout.de/doc/manual/index.html)Complete manual for reference.
+[KLayout reference file](https://www.klayout.de/doc/manual/index.html) Complete manual for reference.
+
+## 5.2 Installation and setup
+ - Type **Klayout** in web browser.
+ - Click on **Get Klayout** which is present at the top of window.
+   <img width="1695" height="758" alt="Screenshot 2025-10-28 122537" src="https://github.com/user-attachments/assets/fbf1208f-1167-4c27-bdf8-5b9b0cf069a7" />
+
+ - Select updated version of klayout in lsited below.
+
+    
+
+
+ - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
