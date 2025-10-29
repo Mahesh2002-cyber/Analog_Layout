@@ -479,9 +479,21 @@ It’s consider that whole area is “pwell”.
 
  - For NMOS select **nfet** decive and click ok.
 
-   
+   <img width="1918" height="1077" alt="Screenshot 2025-10-28 152450" src="https://github.com/user-attachments/assets/5d526aff-6a6e-437c-b7ae-0d9575c2da1a" />
 
- - 
+
+ - For body terminal of the Pmos select **licon_difftap$T$nsdm_li$T** and click ok.
+
+   <img width="1919" height="1079" alt="Screenshot 2025-10-28 152624" src="https://github.com/user-attachments/assets/dbc15fd5-2bd8-45f2-845f-1cb78202d2e3" />
+
+ - For body terminal of the nmos select **licon_difftap$T$psdm_li$T** and click ok.
+
+   <img width="1914" height="1077" alt="Screenshot 2025-10-28 152602" src="https://github.com/user-attachments/assets/bb805a4d-f983-4616-9b84-ac350a14d7c8" />
+
+ - Change the device parameters According to the schematic.
+ - To change parameters (length and width) select device and press **'Q'**, then change the values.
+ - Repeat the procedure for all devices.
+ - Then select **met1(m1)** from the layers 
 
 
 
