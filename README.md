@@ -471,8 +471,17 @@ It’s consider that whole area is “pwell”.
   
  - Open new layout editor window from the file menu.
  - Give **Top cell** name and **Initial layer** name then click on ok.
- - 
+ - To take Pcells (NMOS and PMOS) click on **instance** icon on top of the window.
+ - Select SKY130-pdk library and click on search icon.
+ - It will open new window, in that select **pfet** device and click ok.
 
+   <img width="1918" height="1077" alt="Screenshot 2025-10-28 152408" src="https://github.com/user-attachments/assets/1b2b85a1-e6aa-4694-9dfb-56ee6bb19847" />
+
+ - For NMOS select **nfet** decive and click ok.
+
+   
+
+ - 
 
 
 
