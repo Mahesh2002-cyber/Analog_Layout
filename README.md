@@ -493,7 +493,16 @@ It’s consider that whole area is “pwell”.
  - Change the device parameters According to the schematic.
  - To change parameters (length and width) select device and press **'Q'**, then change the values.
  - Repeat the procedure for all devices.
- - Then select **met1(m1)** from the layers 
+ - Then select **met1(m1)** from the layers and click on **path** icon.
+ - Connect the all terminals with metal as per the schematic.
+ - 
+
+   <img width="1919" height="1075" alt="Screenshot 2025-10-28 160319" src="https://github.com/user-attachments/assets/6ab857d5-1547-4c54-a107-a81c3d24651e" />
+
+<p align="center"><b> Fig:- Inverter Layout</b></p>
+
+ -  
+ 
 
 
 
