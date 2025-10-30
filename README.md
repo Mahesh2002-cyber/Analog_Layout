@@ -522,6 +522,8 @@ It’s consider that whole area is “pwell”.
 
  ## 5.6 LVS (Layout vs Schematiic):
 
+ - To check lvs 
+
 
 
 
