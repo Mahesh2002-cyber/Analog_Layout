@@ -31,6 +31,9 @@ To provide comprehensive documentation, best practices, and workflow guidelines 
   - [5.2 Installation and setup](#5.2-Installation-and-setup)
   - [5.3 Install SKY130-pdk and setup to Klayout](#5.3-Install-SKY130-pdk-and-setup-to-Klayout)
   - [5.4 Inverter layout using Pcell.](#5.4-Inverter-layout-using-Pcell.)
+  - [5.5 DRC (Design Rule check)](#5.5-DRC-(Design-Rule-check))
+  - [5.6 LVS (Layout vs Schematiic)](#5.6-LVS-(Layout-vs-Schematiic))
+
 
 
 # 1. Tools and PDK setup
@@ -501,11 +504,23 @@ It’s consider that whole area is “pwell”.
 
 <p align="center"><b> Fig:- Inverter Layout</b></p>
 
- -  
- 
+
+
+## 5.5 DRC (Design Rule check):
+
+
+ - Click on **Tools** option, then **SKY130**, then click on DRC.
+ - It will open the DRC result window, at right side of the window we can see the errors present in our layout design.
+ - Make sure clean all DRC errors, if any occurs.
+ - To highlight DRC in layout, select error and clickon 
+
+   <img width="1917" height="1066" alt="Screenshot 2025-10-30 093818" src="https://github.com/user-attachments/assets/ca8644ef-130f-46c6-964a-7021dc6ae00c" />
+
+   <p alighn="center"><b> Fig:- DRC result </b></p>
 
 
 
+ ## 5.6 LVS (Layout vs Schematiic):
 
 
 
