@@ -244,7 +244,7 @@ add path $HOME/share/pdk/sky130A/libs.ref/sky130_fd_pr/mag
 - Recommended to use a MOUSE.
 - Magic contains 2 windows: Layout window (Designing) and Console Window (Commands) In the Layout window,
 - Press "g" to view grid
-- The grid is a square predefined with 'X' dimensions in the Layout window To change the grid dimensions: Go to View -> Select a Grid Dimension Go to Options and Click on Toolbar The toolbar contains all design essentials necessary for a layout for example nwell, pwell, pdiffusion layer, polysilicon, pdcontact etc.
+- The grid is a square predefined with 'X' dimensions in the Layout window To change the grid dimensions: Go to window option -> Select a Grid Dimension Go to Options and Click on Toolbar The toolbar contains all design essentials necessary for a layout for example nwell, pwell, pdiffusion layer, polysilicon, pdcontact etc.
 
   <img width="1452" height="841" alt="image" src="https://github.com/user-attachments/assets/95dfc403-601f-4262-94e3-c68ae1279723" />
 
