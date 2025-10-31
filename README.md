@@ -264,9 +264,48 @@ It’s consider that whole area is “pwell”.
  - To paint an area inside a square:-
    After selecting the box, from the tool-bar select the material to fill in the box by clicking on the scroll-wheel on the mouse.
    If you don’t have a mouse, write paint<material name> in the console window.
+
+
  - To erase an area inside a square:-
    To erase material from the selected box, click the Scroll-wheel on the mouse over an empty area(P-well).
    If you don’t have a mouse, write erase in the console window.
+ - Some basic magic tool operations.
+```
+g : grid on/off
+z : zoom in
+Shift + z : zoom out
+
+Draw a box : 
+  1. Left click + Right click of the mouse : pointer will be at a grid point
+  2. Right click : a blank box will be created from the pointed point to the point where right click occured
+ 
+Fill a box with a layer:
+  1. Draw a box
+  2. Select a layer from the tool manager
+  3. Middle click the mouse button
+  
+  or 
+  
+  1. Draw a box
+  2. Write "paint <layer name>" in the tkcon.tcl window
+
+
+Delete a layer:
+  1. Draw a box where you want to delete a layer
+  2. Write "erase <layer name>" in the tkcon.tcl window
+ 
+Delete an area:
+  1. Draw a box where you want to delete an area
+  2. Press 'a'
+  3. Press 'd'
+
+u : undo
+r : rotate
+m : move
+c : copy
+```
+
+
 
 ## 4.4 Lambda Based Design Rules.
  - Lambda(λ) = 90nm (By default equivalent to 1 grid size) Lambda is a scale factor used to define the minimum technology geometry. Layout items are aligned toa grid which represents a basic unit of spacing determined by the <technology file>.
