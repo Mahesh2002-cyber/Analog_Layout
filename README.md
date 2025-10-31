@@ -561,7 +561,7 @@ c : copy
 
  ## 5.6 LVS (Layout vs Schematiic):
 
- - To check lvs 
+ - To check lvs
 
 
 
