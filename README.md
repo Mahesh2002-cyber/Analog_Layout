@@ -145,9 +145,12 @@ work
 vim ~/.magicrc
 ```
 - Inside the file save this:
+- Add your pdk path below.
+  Ex:- tech load /home/umahe/share/pdk/sky130A/libs.tech/magic/sky130A.teck
+       add path /home/umahe/share/pdk/sky130A/libs.ref/sky130_fd_pr/mag
 ```
 tech load $HOME/share/pdk/sky130A/libs.tech/magic/sky130A.tech
-addpath $HOME/share/pdk/sky130A/libs.ref/sky130_fd_pr/mag
+add path $HOME/share/pdk/sky130A/libs.ref/sky130_fd_pr/mag
 ```
 
 # 2. Brief about complimentary CMOS Transistors
