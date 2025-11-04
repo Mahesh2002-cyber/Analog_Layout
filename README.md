@@ -435,7 +435,7 @@ c : copy
  - After generating the schematic netlist we need to compare it with layout “.spice” file.
  - For that we need to add both file paths in the terminal.
  - The syntax is netgen lvs “ .xschem (schematic) path” “ .spice (layout) path” pdk file path.
-   **Ex:- netgen lvs "/home/umahe/.xschem/simulations/inv.spice inv" "/home/umahe/inv.spice inv" /home/umahe/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl**
+   **Ex:- netgen lvs "/home/umahe/.xschem/simulations/inv.spice inv" "/home/umahe/inv.spice inv"/home/umahe/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl**
  - This will check both schematic netlist and layout spice file and produce the output.
  - If layout matches with the schematic it will show “Circuit matches uniquely.”
 
