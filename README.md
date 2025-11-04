@@ -471,7 +471,7 @@ c : copy
  - Then
 
 ```
-  sudo apt installklayout
+  sudo apt install klayout
 ```
 
  - After Installing klayout Install python file also.
