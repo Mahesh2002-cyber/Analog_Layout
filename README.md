@@ -564,7 +564,8 @@ c : copy
 
  ## 5.6 LVS (Layout vs Schematiic):
 
- - To check lvs
+ - To check lvs we need **schematic .spice** file and **layout .spice** file.
+ -  
 
 
 
