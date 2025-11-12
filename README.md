@@ -564,9 +564,17 @@ c : copy
 
  ## 5.6 LVS (Layout vs Schematiic):
 
- - To check lvs we need **schematic .spice** file and **layout .spice** file.
- -  
+ - To check lvs we need **schematic .spice** file and **layout gds** file.
+ - The procedure to create schematic .spice file is mentioned above.
+ - Make sure the schematic .spice file and layout gds file is in same path.
+ - Then click on tools in klayout window, select sky130 and click on lvs.
+ - It will compare both files and proce the result window.
 
+   <img width="921" height="530" alt="Screenshot 2025-10-28 124655 - Copy" src="https://github.com/user-attachments/assets/5897ac2a-9b8f-4b40-b408-06a854864862" />
+ 
+   <p align="center"><b> Fig:- LVS Result </b></p>
+
+ - Clean the LVS if any errors present in the layout, and run again.
 
 
 
