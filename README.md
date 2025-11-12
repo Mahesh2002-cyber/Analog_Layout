@@ -574,7 +574,7 @@ c : copy
  
    <p align="center"><b> Fig:- LVS Result </b></p>
 
- - Clean the LVS if any errors present in the layout, and run again.
+ - Clear the errors in layout if any LVS error occured, and run again.
 
 
 
