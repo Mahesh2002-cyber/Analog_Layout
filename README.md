@@ -591,6 +591,9 @@ c : copy
 # 6 BGR_sky130
 This github repository is for the design of a Band Gap Reference Circuit (BGR) using Google-skywater130 PDK.
 
+<img width="560" height="218" alt="image" src="https://github.com/user-attachments/assets/e1816764-3036-45f0-bf62-43ff0d1719ab" />
+
+
 
 ### Why BGR 
 - A battery is unsuitable for use as a reference voltage source.
@@ -620,20 +623,17 @@ This github repository is for the design of a Band Gap Reference Circuit (BGR) u
 
 ### 6.1.1 BGR Principle
 The operation principle of BGR circuits is to sum a voltage with negative temprature coefficient with another one exhibiting opposite temperature dependancies. Generally semiconductor diode behave as CTAT i.e. Complement to absolute temp. which means with increase in temp. the voltage across the diode will decrease. So we need to find a PTAT circuit which can cancel out the CTAT nature i.e. with rise in temp. the voltage across that device will increase and thus we can get a constant voltage reference with respect to temp.
-<p align="center">
-  <img src="/Images/BGR_Principle.png">
-</p>
+
+<img width="749" height="455" alt="image" src="https://github.com/user-attachments/assets/8e88e1fd-402c-42f2-b21e-036523d4e256" />
 
 #### 6.1.2 CTAT Voltage Generation
 Usually semiconductor diodes shows CTAT behaviour. If we consider constant current is flowing through a forwrard biased diode, then with increase in temp. we can observe that the voltage across the diode is decreaseing. Generally, it is found that the slope of the V~Temp is -2mV/deg Centigarde.
-<p align="center">
-  <img src="/Images/CTAT.png">
-</p>
+
+<img width="668" height="249" alt="image" src="https://github.com/user-attachments/assets/5c1aff86-503c-4519-b8d5-7f0ced92a97c" />
 
 #### 6.1.3 PTAT Voltage Generation
-<p align="center">
-  <img src="/Images/Equation.png">
-</p>
+<img width="263" height="505" alt="image" src="https://github.com/user-attachments/assets/2ddca0c0-d3a0-43bd-9a05-989cc30b5f30" />
+
 
 From Diode current equation we can find that it has two parts, i.e. 
 
@@ -643,14 +643,15 @@ From Diode current equation we can find that it has two parts, i.e.
 So to get a PTAT Voltage generation circuit we have to find some way such that we can get the Vt separated from Is.
 
 To get Vt separated from Is we can approach in the following way
-<p align="center">
-  <img src="/Images/PTATCKT.png">
-</p>
+
+<img width="364" height="331" alt="image" src="https://github.com/user-attachments/assets/53087095-55e5-49ce-9cbd-d11a38de5345" />
+
+
 
 In the above circuit same amount of current I is flowing in both the branches. So the node voltage A and B are going to be same V. Now in the B branch if we substract V1 from V, we get Vt independent of Is.
-<p align="center">
-  <img src="/Images/PTATEQN.png">
-</p>
+
+<img width="514" height="315" alt="image" src="https://github.com/user-attachments/assets/9f6f7763-b5f9-4cb3-9583-6c59b2133765" />
+
 Now
 
 ```
@@ -659,9 +660,9 @@ V1= Voltage across Q2 (CTAT in nature but more sloppy)
 V-V1= Voltage across R1 (PTAT in nature)
 ```
 From above we can see that the voltage V-V1 is PTAT in nature, but it's slope is very less as compared to the CTAT, so we have to increase the slope. In order to increase the slope we can use multiple BJTs as diode, so that current per individual diode will be less and it the slope of V-V1 will increase.
-<p align="center">
-  <img src="/Images/PTAT.png">
-</p>
+
+<img width="804" height="405" alt="image" src="https://github.com/user-attachments/assets/fde752ca-5726-4eec-bcd1-71c593247fb0" />
+
 
 ### 6.2 Types of BGR
 Architecture wise BGR can be designed in two ways
