@@ -690,39 +690,39 @@ The Self-biased current mirror based constitute of the following components.
 
 #### 6.3.1 CTAT Voltage generation circuit
 The CTAT Voltage generation circuit consist of a BJT connected as a diode, which shows CTAT nature as explained above.
-<p align="center">
-  <img src="/Images/CTAT1.png">
-</p>
+
+<img width="183" height="243" alt="image" src="https://github.com/user-attachments/assets/01247cbb-df21-4afe-bdad-8c0f26ee2a1c" />
+
 
 #### 6.3.2 PTAT Voltage generation circuit
 The PTAT Voltgae generation circuit consist of **N** BJTs connected with a series resistance. The operation principle is explained above.
-<p align="center">
-  <img src="/Images/PTAT1.png">
-</p>
+
+<img width="393" height="399" alt="image" src="https://github.com/user-attachments/assets/75354812-fb9c-4723-b903-b7df2b07964c" />
+
 
 #### 6.3.3 Self-Biased Current Mirror Circuit
 The Self-biased current mirror is a type of current mirror which requires no external biasing. This current mirrors biases it self to the desired current value without any external current source reference. 
-<p align="center">
-  <img src="/Images/currentmirror.png">
-</p>
+
+<img width="358" height="301" alt="image" src="https://github.com/user-attachments/assets/2550ca8a-416c-4c19-9282-92743d7d1ec4" />
+
 
 #### 6.3.4 Reference Branch Circuit
 The reference circuit branch performs the addition of CTAT and PTAT volages and gives the final reference voltage. We are using a mirror transitor and a BJT as diode in the reference branch. By virtue of the mirror transistor in the reference branch the same amount of current flows through it as of the current mirror branches. Now from the PTAT circuit branch we are getting PTAT voltage and PTAT current. The same PTAT current is flowing in the reference branch. But the slope of PTAT voltage is much more smaller than that of slope of CTAT voltgae. In order to make increase the voltage slope we have to increase the resistance (current constant, so V increases with increase in R). Now across the high resistance we will get our constant reference voltage which is the result of CTAT Voltage + PTAT Voltage.
-<p align="center">
-  <img src="/Images/refbranch1.png">
-</p>
+
+<img width="137" height="386" alt="image" src="https://github.com/user-attachments/assets/87616d6e-7386-4aed-84f0-b098042b9b48" />
+
 
 #### 6.3.5 Start-up circuit
 The start-up circuit is required to move out the self biased current mirror from degenerative bias point (zero current). The start-up circuit forecefully flows a slow amount of current through the self-biased current mirror when the current is 0 in the current mirror branches, as the current mirror is self biased this small current creats a disturbance and the current mirror auto biased to the desired current value.
-<p align="center">
-  <img src="/Images/startup.png">
-</p>
+
+<img width="521" height="434" alt="image" src="https://github.com/user-attachments/assets/c335ea81-cd0d-4d67-af54-38659da36a5c" />
+
 
 #### 6.3.6 Complete BGR Circuit
 Now by connecting all above components we can get the complete BGR circuit.
-<p align="center">
-  <img src="/Images/fullbgr.png">
-</p>
+
+<img width="751" height="490" alt="image" src="https://github.com/user-attachments/assets/3e45cb87-2ade-4779-b054-02e792d8567a" />
+
 Advantages of SBCM BGR:
 
 - Simplest topology
@@ -816,9 +816,9 @@ After thoroughly going through the device data sheet we selected the following d
 - Finally the size is **L=1u, W=5u and M=8**
 
 #### 7.3.1 Final Circuit
-<p align="center">
-  <img src="/Images/finalbgr.png">
-</p>
+
+<img width="822" height="518" alt="image" src="https://github.com/user-attachments/assets/9e62faab-83b9-438a-bac4-1207423307fa" />
+
 
 ### 7.4 Writing Spice netlist and Pre-layout simulation
 As we are not using any schematic editor we have to write the spice netlist and simulate it using Ngspice.
