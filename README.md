@@ -42,7 +42,14 @@ To provide comprehensive documentation, best practices, and workflow guidelines 
   - [7.2 Device Data sheet](##7.2-Device-data-sheet)
   - [7.3 Circuit Design](##7.3-Circuit-design)
   - [7.4 Wrting spice netlist and prelayout simulation](##7.4-writing-spice-netlist-and-prelayout-simulation)
-
+- [8. Layout Design](#8-Layout-Design)
+  - [8.1 Getting started with magic](##8.1-Getting-started-with-magic)
+  - [8.2 Basic cell design](##8.2-basic-cell-design)
+  - [8.3 Blocks Design](##8.3-blocks-design)
+  - [8.4 Top level design](##8.4-top-level-design)
+  - [8.5 Layout Vs. Schematic(LVS)](##8.5-Layout-Vs.-Schematic(LVS))
+  - [8.6 Parasitic extraction(PEX)](##8.6-Parasitic-extraction(PEX))
+  - [8.7 Post-layout Simulation(PLS)](##8.7-Post-layout-simulation(PLS))
 
 
 # 1. Tools and PDK setup
@@ -846,6 +853,171 @@ Ixx n1 n2 dc 10u : *Ixx* - Current source, *n1* - Node-1 of current source, *n2*
 ```
 
 
+## 4. Layout Design
+
+Now after getting our final netlist, we have to design the layout for our BGR. Layout is drawning the masks used in fabrication. We are going to use the Magic VLSI tool for our layout design.
+
+### 4.1 Getting started with Magic
+
+Magic is an open source VLSI layout editor tool. To launch magic open terminal and write the following command.
+```
+$ magic -T /home/<path for sky130A.tech>/sky130A.tech 
+```
+
+Now it will open up two windows, those are `tkcon.tcl` and `toplevel`. Now let's discuss some basic magic tool operations.
+```
+g : grid on/off
+z : zoom in
+Shift + z : zoom out
+
+Draw a box : 
+  1. Left click + Right click of the mouse : pointer will be at a grid point
+  2. Right click : a blank box will be created from the pointed point to the point where right click occured
+ 
+Fill a box with a layer:
+  1. Draw a box
+  2. Select a layer from the tool manager
+  3. Middle click the mouse button
+  
+  or 
+  
+  1. Draw a box
+  2. Write "paint <layer name>" in the tkcon.tcl window
+
+
+Delete a layer:
+  1. Draw a box where you want to delete a layer
+  2. Write "erase <layer name>" in the tkcon.tcl window
+ 
+Delete an area:
+  1. Draw a box where you want to delete an area
+  2. Press 'a'
+  3. Press 'd'
+
+u : undo
+r : rotate
+m : move
+c : copy
+```
+Now device wise we have the following devices in our circuit.
+- PFETS
+- NFETS
+- Resistor Bank
+- BJTs
+
+Now in order to design faster we should follow the hierarchical design manner. i.e we will design one cell then we will instance that to another level and do placement and routing.
+
+In our design we have 3 hierarchies. Those are 
+
+1. Hierarchy-1 (Basic Cells) : NFET, PFET, BJT, Resistor
+2. Hierarchy-2 (Blocks of similar cells): NFETS, PFETS, PNP10, RESBANK, STARTERNFET
+3. Hierarchy-3 (Top Level): TOP
+
+Now let's start with all leaf cell designs.
+### 4.2 Basic Cell Design
+
+#### 4.2.1 Design of NFET
+In our circuit we are using LVT type NFETs. So we have to draw all the valid layers for the lvt nfet as per our desired sizes.
+
+In our design we have used two different size nfets:
+
+1. W=5 L=1 [mag file](/layout/nfet.mag)
+
+<p align="center">
+ <img width="267" height="657" alt="image" src="https://github.com/user-attachments/assets/f0b183ac-74a2-400a-b062-56bde238d517" />
+
+</p>
+
+2. W=1 L=7 [mag file](/layout/nfet1.mag)
+
+<p align="center">
+  <img width="815" height="228" alt="image" src="https://github.com/user-attachments/assets/ac5008eb-25d5-45b5-956b-637f288d4b4c" />
+
+</p>
+
+#### 4.2.2 Design of PFET
+In our circuit we are using LVT type PFETs. So we have to draw our PFET using all valid layers for lvt pfet. In our design we have one size pfet i.e W=5 L=2 [mag file](/layout/pfet.mag)
+
+<p align="center">
+  <img width="351" height="619" alt="image" src="https://github.com/user-attachments/assets/206b4466-b419-493c-b147-275b40979b21" />
+
+</p>
+
+#### 4.2.3 Design of Resistor
+In our desing we are using poly resistors of W=1.41 and L=7.8. So we have to create the magic file choosing the appropriate layers for the Resistor. [mag file](/layout/res1p41.mag)
+
+<p align="center">
+ <img width="134" height="635" alt="image" src="https://github.com/user-attachments/assets/6889fe4a-2023-40c3-954e-46c2082960d0" />
+
+</p>
+
+#### 4.2.4 Dessing of PNP (BJT)
+In our design we are using PNP having emitter 3.41 * 3.41 uM.So we can use the valid layers to design our PNP. [mag file](/layout/pnpt1.mag)
+
+<p align="center">
+ <img width="624" height="621" alt="image" src="https://github.com/user-attachments/assets/11ca2a12-cbdb-411f-b039-19f202e66ee2" />
+
+</p>
+
+### 4.3 Blocks Design
+
+#### 4.3.1 Design of NFETs
+We have created a layout by putting all the nfets in one region. We have placed the nfets in such a way that it follows common centroid matching. Also used some dummies to avoid Diffusion break and for better matching and noise protection. Also added one guard ring for enhance performance. [mag file](/layout/nfets.mag)
+
+<p align="center">
+  <img width="701" height="623" alt="image" src="https://github.com/user-attachments/assets/c1f95650-ca40-4fbc-b9fd-127e7cc53553" />
+
+</p>
+
+#### 4.3.2 Design of PFETs
+We have created a PFETs block by putting all the pfets together, with matching arrangement, also added the guardring. [mag file](/layout/pfets.mag)
+
+<p align="center">
+  <img width="754" height="234" alt="image" src="https://github.com/user-attachments/assets/fd1b5e6b-8b73-44c2-9460-ecbff01a6184" />
+
+</p>
+
+#### 4.3.3 Design of RESBANK
+We have cretaed the layout of the RESBANK by putting all resistors together, with proper matching arrangemment and soe extra dummies and a guardring. [mag file](/layout/resbank.mag)
+<p align="center">
+ <img width="648" height="619" alt="image" src="https://github.com/user-attachments/assets/fe9d7075-4399-48b0-b969-390d449a6678" />
+
+</p>
+
+#### 4.3.4 Design of PNP10
+We have created the layout by putting all the PNPs together, with appropriate matching, and used dummies to enhance noise performance. [mag file](/layout/pnp10.mag)
+<p align="center">
+  <img width="752" height="446" alt="image" src="https://github.com/user-attachments/assets/98951ad7-58a1-487e-94f4-57a2e91701f3" />
+
+</p>
+
+#### 4.3.5 Design of STARTERNFET
+We placed the the two w=1, l=7 NFETs together with a guardring to desingn the STATRTERNFET. [mag file](/layout/starternfet.mag)
+<p align="center">
+<img width="771" height="249" alt="image" src="https://github.com/user-attachments/assets/f2d2ad8f-1915-4748-8740-bf67410b412b" />
+
+</p>
+
+### 4.4 Top level design
+To obtain the top level design, we have placed all the blocks together, routed it. [mag file](/layout/top.mag)
+<p align="center">
+  <img src="Images/layout/top.png">
+</p>
+
+## 5. LVS and Post-layout simulaton
+
+### 5.1 LVS
+
+LVS stands for Layout vs. Schematic which essentially means to compare the Layout extrated netlist with the Designed spice netlist.
+
+In this project we are going to use Netgen to perform the LVS. 
+
+To start with netgen we can type the command ```netgen``` on the terminal. It will open up the netgen window.
+
+[Magic]:                http://opencircuitdesign.com/magic/
+[Ngspice]:              http://ngspice.sourceforge.net
+[Netgen]:               http://opencircuitdesign.com/netgen/
+[NGSpiceMan]:           http://ngspice.sourceforge.net/docs/ngspice-html-manual/manual.xhtml
 
 
 
