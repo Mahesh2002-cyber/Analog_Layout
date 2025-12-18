@@ -936,7 +936,7 @@ In our design we have used two different size nfets:
 </p>
 
 #### 4.2.2 Design of PFET
-In our circuit we are using LVT type PFETs. So we have to draw our PFET using all valid layers for lvt pfet. In our design we have one size pfet i.e W=5 L=2 [mag file](/BGR_Layout/Pfet.mag)
+In our circuit we are using LVT type PFETs. So we have to draw our PFET using all valid layers for lvt pfet. In our design we have one size pfet i.e W=5 L=2 [mag file](/BGR_Layout/pfet.mag)
 
 <p align="center">
   <img width="351" height="619" alt="image" src="https://github.com/user-attachments/assets/206b4466-b419-493c-b147-275b40979b21" />
