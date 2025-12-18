@@ -921,7 +921,7 @@ In our circuit we are using LVT type NFETs. So we have to draw all the valid lay
 
 In our design we have used two different size nfets:
 
-1. W=5 L=1 [mag file](/layout/nfet.mag)
+1. W=5 L=1 [mag file](/BGR_Layout/Nfet.mag)
 
 <p align="center">
  <img width="267" height="657" alt="image" src="https://github.com/user-attachments/assets/f0b183ac-74a2-400a-b062-56bde238d517" />
