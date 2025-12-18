@@ -928,7 +928,7 @@ In our design we have used two different size nfets:
 
 </p>
 
-2. W=1 L=7 [mag file](/layout/nfet1.mag)
+2. W=1 L=7 [mag file](/BGR_Layout/Nfet1.mag)
 
 <p align="center">
   <img width="815" height="228" alt="image" src="https://github.com/user-attachments/assets/ac5008eb-25d5-45b5-956b-637f288d4b4c" />
@@ -936,7 +936,7 @@ In our design we have used two different size nfets:
 </p>
 
 #### 4.2.2 Design of PFET
-In our circuit we are using LVT type PFETs. So we have to draw our PFET using all valid layers for lvt pfet. In our design we have one size pfet i.e W=5 L=2 [mag file](/layout/pfet.mag)
+In our circuit we are using LVT type PFETs. So we have to draw our PFET using all valid layers for lvt pfet. In our design we have one size pfet i.e W=5 L=2 [mag file](/BGR_Layout/Pfet.mag)
 
 <p align="center">
   <img width="351" height="619" alt="image" src="https://github.com/user-attachments/assets/206b4466-b419-493c-b147-275b40979b21" />
@@ -944,7 +944,7 @@ In our circuit we are using LVT type PFETs. So we have to draw our PFET using al
 </p>
 
 #### 4.2.3 Design of Resistor
-In our desing we are using poly resistors of W=1.41 and L=7.8. So we have to create the magic file choosing the appropriate layers for the Resistor. [mag file](/layout/res1p41.mag)
+In our desing we are using poly resistors of W=1.41 and L=7.8. So we have to create the magic file choosing the appropriate layers for the Resistor. [mag file](/BGR_Layout/Resistor.mag)
 
 <p align="center">
  <img width="134" height="635" alt="image" src="https://github.com/user-attachments/assets/6889fe4a-2023-40c3-954e-46c2082960d0" />
@@ -952,7 +952,7 @@ In our desing we are using poly resistors of W=1.41 and L=7.8. So we have to cre
 </p>
 
 #### 4.2.4 Dessing of PNP (BJT)
-In our design we are using PNP having emitter 3.41 * 3.41 uM.So we can use the valid layers to design our PNP. [mag file](/layout/pnpt1.mag)
+In our design we are using PNP having emitter 3.41 * 3.41 uM.So we can use the valid layers to design our PNP. [mag file](/BGR_Layout/pnp.mag)
 
 <p align="center">
  <img width="624" height="621" alt="image" src="https://github.com/user-attachments/assets/11ca2a12-cbdb-411f-b039-19f202e66ee2" />
@@ -962,7 +962,7 @@ In our design we are using PNP having emitter 3.41 * 3.41 uM.So we can use the v
 ### 4.3 Blocks Design
 
 #### 4.3.1 Design of NFETs
-We have created a layout by putting all the nfets in one region. We have placed the nfets in such a way that it follows common centroid matching. Also used some dummies to avoid Diffusion break and for better matching and noise protection. Also added one guard ring for enhance performance. [mag file](/layout/nfets.mag)
+We have created a layout by putting all the nfets in one region. We have placed the nfets in such a way that it follows common centroid matching. Also used some dummies to avoid Diffusion break and for better matching and noise protection. Also added one guard ring for enhance performance. [mag file](/BGR_Layout/Nfets.mag)
 
 <p align="center">
   <img width="701" height="623" alt="image" src="https://github.com/user-attachments/assets/c1f95650-ca40-4fbc-b9fd-127e7cc53553" />
@@ -970,7 +970,7 @@ We have created a layout by putting all the nfets in one region. We have placed 
 </p>
 
 #### 4.3.2 Design of PFETs
-We have created a PFETs block by putting all the pfets together, with matching arrangement, also added the guardring. [mag file](/layout/pfets.mag)
+We have created a PFETs block by putting all the pfets together, with matching arrangement, also added the guardring. [mag file](/BGR_Layout/Pfets.mag)
 
 <p align="center">
   <img width="754" height="234" alt="image" src="https://github.com/user-attachments/assets/fd1b5e6b-8b73-44c2-9460-ecbff01a6184" />
@@ -978,28 +978,28 @@ We have created a PFETs block by putting all the pfets together, with matching a
 </p>
 
 #### 4.3.3 Design of RESBANK
-We have cretaed the layout of the RESBANK by putting all resistors together, with proper matching arrangemment and soe extra dummies and a guardring. [mag file](/layout/resbank.mag)
+We have cretaed the layout of the RESBANK by putting all resistors together, with proper matching arrangemment and soe extra dummies and a guardring. [mag file](/BGR_Layout/Resistorbank.mag)
 <p align="center">
  <img width="648" height="619" alt="image" src="https://github.com/user-attachments/assets/fe9d7075-4399-48b0-b969-390d449a6678" />
 
 </p>
 
 #### 4.3.4 Design of PNP10
-We have created the layout by putting all the PNPs together, with appropriate matching, and used dummies to enhance noise performance. [mag file](/layout/pnp10.mag)
+We have created the layout by putting all the PNPs together, with appropriate matching, and used dummies to enhance noise performance. [mag file](/BGR_Layout/PNPs.mag)
 <p align="center">
   <img width="752" height="446" alt="image" src="https://github.com/user-attachments/assets/98951ad7-58a1-487e-94f4-57a2e91701f3" />
 
 </p>
 
 #### 4.3.5 Design of STARTERNFET
-We placed the the two w=1, l=7 NFETs together with a guardring to desingn the STATRTERNFET. [mag file](/layout/starternfet.mag)
+We placed the the two w=1, l=7 NFETs together with a guardring to desingn the STATRTERNFET. [mag file](/BGR_Layout/Starternfet.mag)
 <p align="center">
 <img width="771" height="249" alt="image" src="https://github.com/user-attachments/assets/f2d2ad8f-1915-4748-8740-bf67410b412b" />
 
 </p>
 
 ### 4.4 Top level design
-To obtain the top level design, we have placed all the blocks together, routed it. [mag file](/layout/top.mag)
+To obtain the top level design, we have placed all the blocks together, routed it. [mag file](/BGR_Layout/top.mag)
 <p align="center">
   <img src="Images/layout/top.png">
 </p>
