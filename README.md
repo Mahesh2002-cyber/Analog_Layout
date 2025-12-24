@@ -1011,16 +1011,9 @@ To obtain the top level design, we have placed all the blocks together, routed i
 
 ### 5.1 LVS
 
-LVS stands for Layout vs. Schematic which essentially means to compare the Layout extrated netlist with the Designed spice netlist.
+LVS stands for Layout vs Schematic which essentially means to compare the Layout extrated netlist with the Designed spice netlist.
 
-In this project we are going to use Netgen to perform the LVS. 
 
-To start with netgen we can type the command ```netgen``` on the terminal. It will open up the netgen window.
-
-[Magic]:                http://opencircuitdesign.com/magic/
-[Ngspice]:              http://ngspice.sourceforge.net
-[Netgen]:               http://opencircuitdesign.com/netgen/
-[NGSpiceMan]:           http://ngspice.sourceforge.net/docs/ngspice-html-manual/manual.xhtml
 
 
 
