@@ -1046,7 +1046,7 @@ netgen lvs "/home/umahe/.xschem/simulations/bgr.spice bgr" "/home/umahe/p11.spic
 
 
 
-<img width="3000" height="1688" alt="image (1)" src="https://github.com/user-attachments/assets/912e865b-aefc-440e-8bd0-b6395ec26bad" />
+
 
 
 
