@@ -1014,10 +1014,39 @@ To obtain the top level design, we have placed all the blocks together, routed i
 LVS stands for Layout vs Schematic which essentially means to compare the Layout extrated netlist with the Designed spice netlist.
 
 
+ - Save the layout.
+ - Type the below command's in tcl window to generate layout .spice file.
+   ```
+   - extract all
+   - ext2spice lvs
+   - ext2spice
+   ```
+ - To check LVS use below command in ubuntu terminal.
+**netgen lvs "schematic path" "layout path" tcl path**
+
+```
+Eg:-
+netgen lvs "/home/umahe/.xschem/simulations/bgr.spice bgr" "/home/umahe/p11.spice p11" /home/umahe/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl
+
+```
+ - It will give the lvs result window.
+ - If any errors present in the lvs result clean the errors and run the above command again.
+ - Make sure both schematic and layout netlist should match.
 
 
 
 
+
+# Post layout simulation
+ - To run post layout simulation we need to write a test bench.
+ - open a new file in ubuntu terminal with **.sp** extension.
+ - write the below commands in inside the file.
+ - 
+
+
+
+
+<img width="3000" height="1688" alt="image (1)" src="https://github.com/user-attachments/assets/912e865b-aefc-440e-8bd0-b6395ec26bad" />
 
 
 
