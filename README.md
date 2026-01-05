@@ -1048,7 +1048,7 @@ netgen lvs "/home/umahe/.xschem/simulations/bgr.spice bgr" "/home/umahe/p11.spic
 
 **Spice file**
 
-.dc -40 125 5
+.dc -40 130 10
 .control
 run
 plot V(Vref)
