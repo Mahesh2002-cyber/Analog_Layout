@@ -1041,7 +1041,19 @@ netgen lvs "/home/umahe/.xschem/simulations/bgr.spice bgr" "/home/umahe/p11.spic
  - To run post layout simulation we need to write a test bench.
  - open a new file in ubuntu terminal with **.sp** extension.
  - write the below commands in inside the file.
- - 
+```
+.lib /home/umahe/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.temp 27
+.global VDD GND
+
+**Spice file**
+
+.dc -40 125 5
+.control
+run
+plot V(Vref)
+.endc
+.end
 
 
 
