@@ -1055,7 +1055,7 @@ plot V(Vref)
 .endc
 .end
 
-
+```
 
 
 <img width="1919" height="1005" alt="image (3)" src="https://github.com/user-attachments/assets/e7bea4f8-a395-4a83-a792-13fad96c03a1" />
